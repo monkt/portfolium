@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="PortfoliumFeed">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolium Project Feed</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+      <body>
+        <div class="container" ng-view></div>
+
+        <script src="/static/angular/angular.js"></script>
+        <script src="/static/angular-route/angular-route.js"></script>
+        <script src='/static/jquery/dist/jquery.min.js'></script>
+        <script src='/static/ng-infinite-scroll/build/ng-infinite-scroll.min.js'></script>
+
+        <script src="/PortfoliumFeed.js"></script>
+        <script src="/dashboard/dashboard.module.js"></script>
+        <script src="/dashboard/feed/feed.controller.js"></script>
+        <script src="/services/projects.service.js"></script>
+    </body>
+</html>

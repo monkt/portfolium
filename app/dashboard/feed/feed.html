@@ -1,0 +1,13 @@
+<div ng-if="!dashboard.loading" class="row" infinite-scroll="dashboard.paging()">
+  <div ng-repeat="card in dashboard.projects" class="card col-sm-4">
+    <div class="card">
+      <img src="{{card.media[0].filename.url}}" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{card.title}}</h5>
+        <p class="card-text">{{card.description}}</p>
+      </div>
+    </div>
+<div>
+<div ng-if="dashboard.loading" class="emptystatus">
+  <h5>Loading...</h5>
+</div>
